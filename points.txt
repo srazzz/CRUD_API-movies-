@@ -1,0 +1,17 @@
+//using postman we can write test cases 
+open a request and click on tests and copy the code below tests
+CODE::::::
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Body matches string", function () {
+    pm.expect(pm.response.text()).to.include("movie_title");
+});
+
+
+pm.test("Status code name has string OK", function () {
+    pm.response.to.have.status("OK");
+});
+
+this is fo rget request then send the request it will display the pass cases and failed cases
